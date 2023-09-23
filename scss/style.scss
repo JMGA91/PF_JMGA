@@ -29,14 +29,19 @@ body {
 	// border-bottom: 1px solid #198754;
 	border-bottom: 1px solid #9bd957;
 	// background-image: url(../assets/img/header-bkg.jpg);
-	background-image: url(../assets/img/bkg-footer-header.jpg);
-	background-size: auto;
+	background-image: url(../assets/img/bkg-footer-header.webp);
     background-color: #000;
+    background-size: auto 110%;
+    background-repeat: no-repeat;
+}
+
+button.navbar-toggler {
+    border: none;
 }
 
 .menu_chiquito {
-    color: white;
     border: 1px solid #9bd957;
+    background-image: url(../assets/icons/burger-menu-svgrepo-com.svg);
 }
 
 nav.navbar .nav-item .nav-link, 
@@ -114,7 +119,7 @@ main {
     position: relative;
     overflow: hidden;
     // background-image: url(../assets/img/output-onlinepngtools.png);
-    background-image: url(../assets/img/cyberpunkwave-01.jpg);
+    background-image: url(../assets/img/cyberpunkwave-01.webp);
 }
 
 #formulario {
@@ -122,6 +127,17 @@ main {
     padding: 10px;
     margin: 5px;
     color: white;
+}
+
+#formulario div textarea {
+    max-width: 100%;
+}
+
+#formulario fieldset {
+    display: flex;
+    justify-content: center;
+    column-gap: 15px;
+    margin-bottom: 15px;
 }
 
 #formulario input[type=submit], 
@@ -151,23 +167,23 @@ main {
 }
 
 .cajita {
-    @include cajita(20%);      
+    @include cajita(20%);   
 }
 
 .cajita1 {
     background-image: url(../assets/img/monkey.webp);
 }
 .cajita2 {
-    background-image: url(../assets/img/reverie.jpg);
+    background-image: url(../assets/img/reverie.webp);
 }
 .cajita3 {
-    background-image: url(../assets/img/Synapse.jpg);
+    background-image: url(../assets/img/Synapse.webp);
 }
 .cajita4 {
-    background-image: url(../assets/img/remnant2.jpg);
+    background-image: url(../assets/img/remnant2.webp);
 }
 .cajita5 {
-    background-image: url(../assets/img/HL.jpg);
+    background-image: url(../assets/img/HL.webp);
 }
 .cajita6 {
     background-image: url(../assets/img/megaman.webp);
@@ -177,88 +193,99 @@ main {
 }
 
 .cajita8 {
-    background-image: url(../assets/img/r6.jpg);
+    background-image: url(../assets/img/r6.webp);
 }
 
 .cajita9 {
-    background-image: url(../assets/img/doom_ftw.jpg);
+    background-image: url(../assets/img/doom_ftw.webp);
 }
 
 .cajita10 {
-    background-image: url(../assets/img/skyrim.jpg);
+    background-image: url(../assets/img/skyrim.webp);
 }
 
 .cajita11 {
-    background-image: url(../assets/img/V_for_Vendetta_large.jpg);
+    background-image: url(../assets/img/V_for_Vendetta_large.webp);
 }
 
 .cajita12 {
-    background-image: url(../assets/img/21_Blackjack_large.jpg);
+    background-image: url(../assets/img/21_Blackjack_large.webp);
 }
 
 .cajita13 {
-    background-image: url(../assets/img/Shazam_large.jpeg);
+    background-image: url(../assets/img/Shazam_large.webp);
 }
 
 .cajita1_movie {
 	height: 400px;
 	background-size: contain;
-    background-image: url(../assets/img/65.jpg);
+    background-image: url(../assets/img/65.webp);
 }
 .cajita2_movie {
 	height: 400px;
 	background-size: contain;
-    background-image: url(../assets/img/Ant_Man_y_la_Avispa_Quantumanaia-585469373-large.jpg);
+    background-image: url(../assets/img/Ant_Man_y_la_Avispa_Quantumanaia-585469373-large.webp);
 }
 .cajita3_movie {
 	height: 400px;
 	background-size: contain;
-    background-image: url(../assets/img/jw4.jpg);
+    background-image: url(../assets/img/jw4.webp);
 }
 .cajita4_movie {
 	height: 400px;
 	background-size: contain;
-    background-image: url(../assets/img/shazam.jpg);
+    background-image: url(../assets/img/shazam.webp);
 }
 .cajita5_movie {
 	height: 400px;
 	background-size: contain;
-    background-image: url(../assets/img/knockatthecabin.jfif);
+    background-image: url(../assets/img/knockatthecabin.webp);
 }
 .cajita6_movie {
 	height: 400px;
 	background-size: contain;
-    background-image: url(../assets/img/scream6.jfif);
+    background-image: url(../assets/img/scream6.webp);
 }
 .cajita7_movie {
 	height: 400px;
 	background-size: contain;
-    background-image: url(../assets/img/Los_Fabelman-723163902-large.jpg);
+    background-image: url(../assets/img/Los_Fabelman-723163902-large.webp);
 }
 
 .cajita8_movie {
 	height: 400px;
 	background-size: contain;
-    background-image: url(../assets/img/jason_bourne.jpg);
+    background-image: url(../assets/img/jason_bourne.webp);
 }
 
 .cajita9_movie {
 	height: 400px;
 	background-size: contain;
-    background-image: url(../assets/img/V_For_Vendetta.jpg);
+    background-image: url(../assets/img/V_For_Vendetta.webp);
 }
 
 .cajita10_movie {
 	height: 400px;
 	background-size: contain;
-    background-image: url(../assets/img/21_Blackjack.jpg);
+    background-image: url(../assets/img/21_Blackjack.webp);
 }
 
 @media (max-width:1180px) {
     .cajita {
-        @include cajita(33.33%);
+        @include cajita(calc(33.33% - 24px));
     }
- }
+}
+@media (max-width:840px) {
+    .cajita {
+        @include cajita(calc(50% - 24px));
+    }
+}
+
+@media (max-width:650px) {
+    .cajita {
+        @include cajita(100%);
+    }
+}
 
 article h3 {
     margin-top: 10px;
@@ -312,15 +339,25 @@ article h4 {
 	transform: scale(1.05);
 }
 
+#carouselExample {
+    margin-top: 70px;
+}
+
 .carousel-inner {
     position: relative;
     overflow: hidden;
-    top: 70px;
     left: 50%;
 	transform: translateX(-50%);
 }
 .carousel-item img {
 	margin: 0 auto;
+    width: 100%;
+}
+
+@media (min-width:1025px) {
+    .carousel-item img {
+        width: 50%;
+    }
 }
 
 /* Setup de footer */
@@ -329,24 +366,26 @@ footer {
     height: 10vh;
     width: 100vw;
     overflow: hidden;
-    background-image: url(../assets/img/testing_footer_3.webp);
+    background-image: url(../assets/img/bkg-footer-header.webp);
     background-size: cover;
     color: white;
 }
 
 #derechos {
+    margin-bottom: 0;
     margin-top: 10px;
     text-align: center;
     margin-right: 20px;
 }
 #createdByFlame {
-    margin-top: 10px;
     text-align: center;
     margin-right: 20px;
 }
 
 .twitter {
-	left: 49%;
+	display: flex;
+    justify-content: center;
+    column-gap: 8px;
 	position: relative;
 }
 
